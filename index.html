@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSphere</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-bar">
+            <div class="radar-container">
+                <img src="radar.svg" alt="radar" class="radar-icon"/>
+            </div>
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button class="btn" id="searchBtn"><i class="fas fa-search"></i></button>
+            <button class="btn" id="micBtn"><i class="fas fa-microphone"></i></button>
+            <button class="btn" id="locateBtn"><i class="fas fa-location-crosshairs"></i></button>
+        </div>
+
+        <div class="weather-container">
+            <div class="current-weather" id="currentWeather"></div>
+            <div class="forecast-section">
+                <h3>24-Hour Forecast</h3>
+                <div class="hourly-forecast" id="hourlyForecast"></div>
+            </div>
+            <div class="forecast-section">
+                <h3>5-Days Forecast</h3>
+                <div class="daily-forecast" id="dailyForecast"></div>
+            </div>
+            <div id="aiResponse" style="margin-top:30px; font-size:1.1rem;"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
